@@ -30,3 +30,23 @@ if (funkcia == "find")
   Console.WriteLine("Podreťazec "+ podretazec +  " sa vo vete nenachádza.");
  }
 }
+
+if (funkcia == "sum")
+{
+ vykonaj_sum();
+}
+
+if (funkcia == "odm")
+{
+ vykonaj_odm();
+}
+
+if (funkcia == "help")
+{
+ pomoc();
+}
+
+if (funkcia == "find")
+{
+ najdi();
+}
