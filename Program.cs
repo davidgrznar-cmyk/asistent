@@ -46,7 +46,14 @@ if (funkcia == "help")
  pomoc();
 }
 
-if (funkcia == "find")
-{
- najdi();
+ if (funkcia == "find")
+ {
+  najdi();
+ }
+
+ if (funkcia == "rect")
+ {
+  rect();
+ }
+
 }
