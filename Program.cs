@@ -52,7 +52,7 @@ while (true)
 
    int index = celaveta.IndexOf(podretazec);
 
-   if (index != -1)
+   if (index >= 0)
    {
     Console.WriteLine("Podreťazec " + podretazec + " sa začína vo vete na indexe " + index);
    }
