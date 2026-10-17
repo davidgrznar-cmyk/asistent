@@ -27,8 +27,15 @@ while (true)
   {
    Console.WriteLine("zadaj číslo na odmocnenie");
    int.TryParse(Console.ReadLine(), out int cislo_na_odmocnenie);
-   double odmocnina = Math.Sqrt(cislo_na_odmocnenie);
-   Console.WriteLine("odmocnina tvojho čísla je " + odmocnina);
+   if (cislo_na_odmocnenie >= 0)
+   {
+    double odmocnina = Math.Sqrt(cislo_na_odmocnenie);
+    Console.WriteLine("odmocnina tvojho čísla je " + odmocnina);
+   }
+   else
+   {
+    Console.WriteLine("Záporné číslo, skús znovu");
+   }
   }
  }
 
@@ -52,7 +59,7 @@ while (true)
 
    int index = celaveta.IndexOf(podretazec);
 
-   if (index >= 0)
+   if (index != -1)
    {
     Console.WriteLine("Podreťazec " + podretazec + " sa začína vo vete na indexe " + index);
    }
