@@ -2,7 +2,7 @@
 while (true)
 {
  Console.WriteLine("Akú funkciu by si chcel využiť?");
- string funkcia = Console.ReadLine();
+ string funkcia = Console.ReadLine().ToLower();
  if (funkcia == "exit")
  {
   Console.WriteLine("Asistent ukončený");
@@ -75,7 +75,7 @@ while (true)
    {
     Console.WriteLine("Pracujeme s obdĺžníkom s rozmerom" + strana_b + "x" + strana_a);
     Console.WriteLine("Čo chceme zmerať?");
-    string funkcia_v_obdlzniku = Console.ReadLine();
+    string funkcia_v_obdlzniku = Console.ReadLine().ToLower();
 
     void area()
     {
@@ -136,7 +136,7 @@ void pole()
  while (true)
  {
   Console.WriteLine("Čo s ním chceš spraviť?");
-  string funkcia = Console.ReadLine();
+  string funkcia = Console.ReadLine().ToLower();
 
   void sort()
   {
@@ -163,21 +163,19 @@ void pole()
   {
    Console.WriteLine("Aké číslo hľadáš?");
    int hladane = Convert.ToInt32(Console.ReadLine());
-   int index = -1;
+   int index = 0;
 
    for (int i = 0; i < pole.Length; i++)
    {
     if (pole[i] == hladane)
     {
      index = i;
-     ;
     }
    }
 
    if (index >= 0)
    {
-    Console.WriteLine("Číslo " + hladane +
-                      " sa nachádza na pozícii " + (index + 1));
+    Console.WriteLine("Číslo " + hladane + " sa nachádza na pozícii " + (index + 1));
    }
    else
    {
